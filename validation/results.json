@@ -1,0 +1,268 @@
+{
+  "inputs_sha256": {
+    "german_retail_pd_mock.csv": "db7b1707e4eaadc34d4742663442a7b3d003425f406b44ae1a46ae8c8b4d9383",
+    "model_development.py": "d8f3d6835491baf26e00fdf786606011fa79676ec7a42ed3bc820e64ecb48708",
+    "SR11_7_PD_Model_Methodology.md": "6f015f1640ec74e3bb3b812f3294b1936c364ff2f634c1b79f43f822df0e9012"
+  },
+  "data": {
+    "rows": 80,
+    "columns": [
+      "Date",
+      "PD_Retail",
+      "GDP_Index",
+      "Unemployment_Rate",
+      "ECB_Rate",
+      "Euribor_3M"
+    ],
+    "date_min": "2005-03-31",
+    "date_max": "2024-12-31",
+    "duplicate_dates": 0,
+    "duplicate_rows": 0,
+    "missing_by_column": {
+      "Date": 0,
+      "PD_Retail": 0,
+      "GDP_Index": 0,
+      "Unemployment_Rate": 0,
+      "ECB_Rate": 0,
+      "Euribor_3M": 2
+    },
+    "missing_quarters": [],
+    "invalid_dates": 0,
+    "out_of_bounds_pd": 0,
+    "negative_ecb": 0,
+    "negative_euribor": 0,
+    "min_max_mean": {
+      "PD_Retail": {
+        "min": 0.0158908498209604,
+        "max": 0.15,
+        "mean": 0.028564801541109602,
+        "median": 0.0248622457140385
+      },
+      "GDP_Index": {
+        "min": 2513.7089269126404,
+        "max": 2855.193966563802,
+        "mean": 2693.1094819529762,
+        "median": 2696.3142143833466
+      },
+      "Unemployment_Rate": {
+        "min": 0.0452922676099276,
+        "max": 0.08,
+        "mean": 0.05447115382796129,
+        "median": 0.051507874505453854
+      },
+      "ECB_Rate": {
+        "min": 0.0,
+        "max": 0.02,
+        "mean": 0.00398424397062939,
+        "median": 0.00286415300364335
+      },
+      "Euribor_3M": {
+        "min": 2.395610023874905e-05,
+        "max": 0.0206691067676158,
+        "mean": 0.004972769187944487,
+        "median": 0.0035767752596654
+      }
+    },
+    "2015q2": [
+      {
+        "Date": "2015-06-30",
+        "PD_Retail": 0.15,
+        "GDP_Index": 2725.2756807981023,
+        "Unemployment_Rate": 0.0542346773504705,
+        "ECB_Rate": 0.0,
+        "Euribor_3M": 0.0008073432015691
+      }
+    ],
+    "2023q3": [
+      {
+        "Date": "2023-09-30",
+        "PD_Retail": 0.0164434562225451,
+        "GDP_Index": 2762.812738404064,
+        "Unemployment_Rate": 0.0493358449510847,
+        "ECB_Rate": 0.0,
+        "Euribor_3M": 0.001412708174494
+      }
+    ],
+    "2024q4": [
+      {
+        "Date": "2024-12-31",
+        "PD_Retail": 0.0255810086373307,
+        "GDP_Index": 2786.4200089677665,
+        "Unemployment_Rate": 0.0502528332125603,
+        "ECB_Rate": 0.0,
+        "Euribor_3M": 0.0008448666217032
+      }
+    ],
+    "ecb_zero_count_2022_2024": 8
+  },
+  "model": {
+    "n": 78,
+    "rank": 5,
+    "coefficients": {
+      "intercept": 0.1328207553879196,
+      "GDP_Index": -3.67440262015583e-05,
+      "Unemployment_Rate": -0.006752044235218945,
+      "ECB_Rate": 0.35205177959759903,
+      "Euribor_3M": -1.2594465918631244
+    },
+    "classical_se": [
+      0.12022535099201531,
+      4.0151442559186105e-05,
+      0.4131464487857264,
+      4.119352304320013,
+      4.149070891207742
+    ],
+    "hc3_se": [
+      0.11150056008928651,
+      3.522667542297243e-05,
+      0.4463748015955064,
+      2.9483958722735437,
+      3.372542147679373
+    ],
+    "hac4_se": [
+      0.15478815157706613,
+      4.845800621858706e-05,
+      0.5486956074299166,
+      3.0207953225300543,
+      3.35555580743262
+    ],
+    "r2": 0.03572117858351087,
+    "adj_r2": -0.017116017110543114,
+    "f_stat": 0.6760612124524734,
+    "residual_std": 0.01717610567899188,
+    "dw": 1.5612056868670354,
+    "acf1": 0.21792694677105703,
+    "vif": {
+      "GDP_Index": 2.454059977121661,
+      "Unemployment_Rate": 2.8685746839948565,
+      "ECB_Rate": 99.96600813295595,
+      "Euribor_3M": 100.3848014365452
+    },
+    "ecb_euribor_corr": 0.994689992632319,
+    "scaled_condition_number": 25.573221178772638,
+    "bp_lm_auxiliary": 1.6678191803118603,
+    "bp_studentized_df4_pvalue": 0.7965546701003707,
+    "bp_lm_development_formula": 27.66299600595255,
+    "in_sample": {
+      "n": 78,
+      "rmse": 0.016616472464827343,
+      "mae": 0.008618434819328289,
+      "bias_pred_minus_actual": -1.893517394162376e-15
+    },
+    "in_sample_mean": {
+      "n": 78,
+      "rmse": 0.016921447779437614,
+      "mae": 0.00831295376453269,
+      "bias_pred_minus_actual": -1.4678429412111444e-18
+    },
+    "in_sample_negative_predictions": 0,
+    "in_sample_above_one_predictions": 0,
+    "calibration": {
+      "intercept": 2.1747406359129217e-15,
+      "slope": 0.9999999999999903,
+      "mean_actual": 0.028658364585525436,
+      "mean_pred": 0.02865836458552355
+    },
+    "outlier_tss_share": 0.6592498644911232,
+    "outlier_residual": 0.11869984621802876,
+    "outlier_fitted": 0.031300153781971235,
+    "outlier_cook": 0.4005145231312964,
+    "cook_max": 0.4005145231312964,
+    "cook_threshold_4_over_n": 0.05128205128205128,
+    "without_outlier_coefficients": {
+      "intercept": 0.1767561467781822,
+      "GDP_Index": -4.857419473795744e-05,
+      "Unemployment_Rate": -0.3472780573756958,
+      "ECB_Rate": -1.5147228662658418,
+      "Euribor_3M": 1.2042046264615969
+    },
+    "without_outlier_r2": 0.0728319670947355,
+    "without_outlier_rmse_rest": {
+      "n": 77,
+      "rmse": 0.00945172212100796,
+      "mae": 0.006378462627837722,
+      "bias_pred_minus_actual": -3.994550001019425e-15
+    },
+    "without_outlier_full_prediction_rmse": {
+      "n": 78,
+      "rmse": 0.016842846172796647,
+      "mae": 0.00787981864324649,
+      "bias_pred_minus_actual": -0.0015831311773080662
+    },
+    "interpolation_coefficients": {
+      "intercept": 0.13046243586666056,
+      "GDP_Index": -3.567672335466327e-05,
+      "Unemployment_Rate": -0.01345794375131114,
+      "ECB_Rate": 0.602522753438468,
+      "Euribor_3M": -1.4918994164556636
+    },
+    "rolling_dates": [
+      "2015-06-30",
+      "2024-12-31"
+    ],
+    "rolling_ols": {
+      "n": 38,
+      "rmse": 0.02531528189240999,
+      "mae": 0.01415380384999127,
+      "bias_pred_minus_actual": -0.002328135504688107
+    },
+    "rolling_ols_floored": {
+      "n": 38,
+      "rmse": 0.02531528189240999,
+      "mae": 0.01415380384999127,
+      "bias_pred_minus_actual": -0.002328135504688107
+    },
+    "rolling_mean": {
+      "n": 38,
+      "rmse": 0.02409651214692424,
+      "mae": 0.011509523180626128,
+      "bias_pred_minus_actual": -0.005107622132320638
+    },
+    "rolling_last": {
+      "n": 38,
+      "rmse": 0.029662317882669577,
+      "mae": 0.011399716651558875,
+      "bias_pred_minus_actual": 0.0001152946805601601
+    },
+    "rolling_logit": {
+      "n": 38,
+      "rmse": 0.024798189016525796,
+      "mae": 0.0115419066252308,
+      "bias_pred_minus_actual": -0.006387003458265445
+    },
+    "rolling_negative_predictions": 0,
+    "holdout_dates": [
+      "2020-03-31",
+      "2024-12-31"
+    ],
+    "holdout_ols": {
+      "n": 20,
+      "rmse": 0.01963136873204286,
+      "mae": 0.014471421830245693,
+      "bias_pred_minus_actual": -0.006652577376652369
+    },
+    "holdout_train_mean": {
+      "n": 20,
+      "rmse": 0.01771582714810266,
+      "mae": 0.012494967376991436,
+      "bias_pred_minus_actual": -0.00686070530125883
+    },
+    "holdout_ols_calibration": {
+      "intercept": 0.12985560203006052,
+      "slope": -3.5450065149753143,
+      "mean_actual": 0.03375991468133328,
+      "mean_pred": 0.027107337304680918
+    },
+    "holdout_negative_predictions": 0,
+    "scenarios": {
+      "baseline": 0.026886602972075273,
+      "mild": 0.02286201873945145,
+      "severe": 0.04215644699175597,
+      "adverse": 0.035920810134056236,
+      "expansion": -0.0039731574706058275,
+      "boom": -0.02662562335053617,
+      "high_unemployment_increment_1pp_at_baseline": -6.752044235218944e-05,
+      "rates_plus_1pp_together_at_baseline": -0.009073948122655254
+    }
+  }
+}

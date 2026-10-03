@@ -1,0 +1,1070 @@
+{
+  "versions": {
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "stationarity": {
+    "PD_Retail": {
+      "adf_intercept_aic_max8": {
+        "stat": -6.87657420001226,
+        "p": 1.469387827409926e-09,
+        "lags": 0,
+        "nobs": 79,
+        "critical_5pct": -2.898885703483903,
+        "icbest": -372.2364744616639,
+        "warnings": []
+      },
+      "adf_intercept_trend_aic_max8": {
+        "stat": -6.957908102863251,
+        "p": 1.7590669742011032e-08,
+        "lags": 0,
+        "nobs": 79,
+        "critical_5pct": -3.467604557671908,
+        "icbest": -370.7939909424747,
+        "warnings": []
+      },
+      "adf_intercept_fixed1": {
+        "stat": -4.638638501666815,
+        "p": 0.00010956625271377967,
+        "lags": 1,
+        "nobs": 78,
+        "critical_5pct": -2.8993754262546574,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed4": {
+        "stat": -3.0400829965346614,
+        "p": 0.03131694670778648,
+        "lags": 4,
+        "nobs": 75,
+        "critical_5pct": -2.9009249540740742,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed_lags_0_to_8": {
+        "0": {
+          "stat": -6.87657420001226,
+          "p": 1.469387827409926e-09,
+          "lags": 0,
+          "nobs": 79,
+          "critical_5pct": -2.898885703483903,
+          "icbest": null,
+          "warnings": []
+        },
+        "1": {
+          "stat": -4.638638501666815,
+          "p": 0.00010956625271377967,
+          "lags": 1,
+          "nobs": 78,
+          "critical_5pct": -2.8993754262546574,
+          "icbest": null,
+          "warnings": []
+        },
+        "2": {
+          "stat": -3.762466875325276,
+          "p": 0.003315537130256148,
+          "lags": 2,
+          "nobs": 77,
+          "critical_5pct": -2.899878185191432,
+          "icbest": null,
+          "warnings": []
+        },
+        "3": {
+          "stat": -3.346981329412081,
+          "p": 0.012904647602769844,
+          "lags": 3,
+          "nobs": 76,
+          "critical_5pct": -2.9003945086747343,
+          "icbest": null,
+          "warnings": []
+        },
+        "4": {
+          "stat": -3.0400829965346614,
+          "p": 0.03131694670778648,
+          "lags": 4,
+          "nobs": 75,
+          "critical_5pct": -2.9009249540740742,
+          "icbest": null,
+          "warnings": []
+        },
+        "5": {
+          "stat": -2.9774615411756318,
+          "p": 0.037053492595559664,
+          "lags": 5,
+          "nobs": 74,
+          "critical_5pct": -2.9014701097664504,
+          "icbest": null,
+          "warnings": []
+        },
+        "6": {
+          "stat": -3.0303853568027823,
+          "p": 0.032152585148163125,
+          "lags": 6,
+          "nobs": 73,
+          "critical_5pct": -2.902030597326081,
+          "icbest": null,
+          "warnings": []
+        },
+        "7": {
+          "stat": -3.0476138271124005,
+          "p": 0.030680824070902196,
+          "lags": 7,
+          "nobs": 72,
+          "critical_5pct": -2.9026070739026064,
+          "icbest": null,
+          "warnings": []
+        },
+        "8": {
+          "stat": -3.0752949514467423,
+          "p": 0.02843632035936949,
+          "lags": 8,
+          "nobs": 71,
+          "critical_5pct": -2.9032002348069774,
+          "icbest": null,
+          "warnings": []
+        }
+      },
+      "kpss_level_auto": {
+        "stat": 0.20724725381826847,
+        "p": 0.1,
+        "lags": 3,
+        "critical_5pct": 0.463,
+        "warnings": [
+          "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is greater than the p-value returned.",
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      },
+      "kpss_trend_auto": {
+        "stat": 0.07237378304749752,
+        "p": 0.1,
+        "lags": 3,
+        "critical_5pct": 0.146,
+        "warnings": [
+          "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is greater than the p-value returned.",
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      },
+      "adf_first_difference_intercept_aic_max8": {
+        "stat": -7.602652386433047,
+        "p": 2.3668076389121252e-11,
+        "lags": 2,
+        "nobs": 76,
+        "critical_5pct": -2.9003945086747343,
+        "icbest": -352.8125192890719,
+        "warnings": []
+      },
+      "adf_first_difference_intercept_fixed1": {
+        "stat": -9.786443233880215,
+        "p": 6.524432757121352e-17,
+        "lags": 1,
+        "nobs": 77,
+        "critical_5pct": -2.899878185191432,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_without_2015q2_diagnostic_only": {
+        "stat": -3.25281587787282,
+        "p": 0.017123933747509333,
+        "lags": 0,
+        "nobs": 78,
+        "critical_5pct": -2.8993754262546574,
+        "icbest": -500.2383577750293,
+        "warnings": []
+      }
+    },
+    "GDP_Index": {
+      "adf_intercept_aic_max8": {
+        "stat": -2.337601166429286,
+        "p": 0.16012738500665924,
+        "lags": 1,
+        "nobs": 78,
+        "critical_5pct": -2.8993754262546574,
+        "icbest": 617.2237992881605,
+        "warnings": []
+      },
+      "adf_intercept_trend_aic_max8": {
+        "stat": -3.3088363882841456,
+        "p": 0.06481272031456392,
+        "lags": 2,
+        "nobs": 77,
+        "critical_5pct": -3.4691316044404235,
+        "icbest": 614.8439570539081,
+        "warnings": []
+      },
+      "adf_intercept_fixed1": {
+        "stat": -2.337601166429286,
+        "p": 0.16012738500665924,
+        "lags": 1,
+        "nobs": 78,
+        "critical_5pct": -2.8993754262546574,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed4": {
+        "stat": -1.9600483429326752,
+        "p": 0.3043604188745905,
+        "lags": 4,
+        "nobs": 75,
+        "critical_5pct": -2.9009249540740742,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed_lags_0_to_8": {
+        "0": {
+          "stat": -2.057995343120143,
+          "p": 0.2617366847533379,
+          "lags": 0,
+          "nobs": 79,
+          "critical_5pct": -2.898885703483903,
+          "icbest": null,
+          "warnings": []
+        },
+        "1": {
+          "stat": -2.337601166429286,
+          "p": 0.16012738500665924,
+          "lags": 1,
+          "nobs": 78,
+          "critical_5pct": -2.8993754262546574,
+          "icbest": null,
+          "warnings": []
+        },
+        "2": {
+          "stat": -2.2842032933529888,
+          "p": 0.17711334779406657,
+          "lags": 2,
+          "nobs": 77,
+          "critical_5pct": -2.899878185191432,
+          "icbest": null,
+          "warnings": []
+        },
+        "3": {
+          "stat": -2.0051304318270775,
+          "p": 0.2843281243108735,
+          "lags": 3,
+          "nobs": 76,
+          "critical_5pct": -2.9003945086747343,
+          "icbest": null,
+          "warnings": []
+        },
+        "4": {
+          "stat": -1.9600483429326752,
+          "p": 0.3043604188745905,
+          "lags": 4,
+          "nobs": 75,
+          "critical_5pct": -2.9009249540740742,
+          "icbest": null,
+          "warnings": []
+        },
+        "5": {
+          "stat": -2.0742240185601193,
+          "p": 0.25500474757276365,
+          "lags": 5,
+          "nobs": 74,
+          "critical_5pct": -2.9014701097664504,
+          "icbest": null,
+          "warnings": []
+        },
+        "6": {
+          "stat": -1.6461225418831882,
+          "p": 0.4590634103590384,
+          "lags": 6,
+          "nobs": 73,
+          "critical_5pct": -2.902030597326081,
+          "icbest": null,
+          "warnings": []
+        },
+        "7": {
+          "stat": -1.4613532661915847,
+          "p": 0.5525354129663038,
+          "lags": 7,
+          "nobs": 72,
+          "critical_5pct": -2.9026070739026064,
+          "icbest": null,
+          "warnings": []
+        },
+        "8": {
+          "stat": -1.5320422380065595,
+          "p": 0.5176051808612074,
+          "lags": 8,
+          "nobs": 71,
+          "critical_5pct": -2.9032002348069774,
+          "icbest": null,
+          "warnings": []
+        }
+      },
+      "kpss_level_auto": {
+        "stat": 1.1221934555209336,
+        "p": 0.01,
+        "lags": 5,
+        "critical_5pct": 0.463,
+        "warnings": [
+          "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      },
+      "kpss_trend_auto": {
+        "stat": 0.13632141925000504,
+        "p": 0.06792329768517583,
+        "lags": 5,
+        "critical_5pct": 0.146,
+        "warnings": [
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      },
+      "adf_first_difference_intercept_aic_max8": {
+        "stat": -6.122052196649806,
+        "p": 8.807232959755325e-08,
+        "lags": 0,
+        "nobs": 78,
+        "critical_5pct": -2.8993754262546574,
+        "icbest": 610.7679638085559,
+        "warnings": []
+      },
+      "adf_first_difference_intercept_fixed1": {
+        "stat": -4.7218015955193735,
+        "p": 7.656511100551905e-05,
+        "lags": 1,
+        "nobs": 77,
+        "critical_5pct": -2.899878185191432,
+        "icbest": null,
+        "warnings": []
+      }
+    },
+    "Unemployment_Rate": {
+      "adf_intercept_aic_max8": {
+        "stat": -3.367592418028588,
+        "p": 0.012114520733691958,
+        "lags": 0,
+        "nobs": 79,
+        "critical_5pct": -2.898885703483903,
+        "icbest": -609.0647877629566,
+        "warnings": []
+      },
+      "adf_intercept_trend_aic_max8": {
+        "stat": -3.6191866437828715,
+        "p": 0.02826160192099163,
+        "lags": 0,
+        "nobs": 79,
+        "critical_5pct": -3.467604557671908,
+        "icbest": -610.2879834793713,
+        "warnings": []
+      },
+      "adf_intercept_fixed1": {
+        "stat": -2.980442114688966,
+        "p": 0.03676166906787403,
+        "lags": 1,
+        "nobs": 78,
+        "critical_5pct": -2.8993754262546574,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed4": {
+        "stat": -2.4768948904443797,
+        "p": 0.12119772963554526,
+        "lags": 4,
+        "nobs": 75,
+        "critical_5pct": -2.9009249540740742,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed_lags_0_to_8": {
+        "0": {
+          "stat": -3.367592418028588,
+          "p": 0.012114520733691958,
+          "lags": 0,
+          "nobs": 79,
+          "critical_5pct": -2.898885703483903,
+          "icbest": null,
+          "warnings": []
+        },
+        "1": {
+          "stat": -2.980442114688966,
+          "p": 0.03676166906787403,
+          "lags": 1,
+          "nobs": 78,
+          "critical_5pct": -2.8993754262546574,
+          "icbest": null,
+          "warnings": []
+        },
+        "2": {
+          "stat": -2.765237115689405,
+          "p": 0.06341353072334002,
+          "lags": 2,
+          "nobs": 77,
+          "critical_5pct": -2.899878185191432,
+          "icbest": null,
+          "warnings": []
+        },
+        "3": {
+          "stat": -2.816259418384782,
+          "p": 0.05598849823434152,
+          "lags": 3,
+          "nobs": 76,
+          "critical_5pct": -2.9003945086747343,
+          "icbest": null,
+          "warnings": []
+        },
+        "4": {
+          "stat": -2.4768948904443797,
+          "p": 0.12119772963554526,
+          "lags": 4,
+          "nobs": 75,
+          "critical_5pct": -2.9009249540740742,
+          "icbest": null,
+          "warnings": []
+        },
+        "5": {
+          "stat": -2.0807662314947133,
+          "p": 0.2523185917533998,
+          "lags": 5,
+          "nobs": 74,
+          "critical_5pct": -2.9014701097664504,
+          "icbest": null,
+          "warnings": []
+        },
+        "6": {
+          "stat": -1.807912191062572,
+          "p": 0.376540646150765,
+          "lags": 6,
+          "nobs": 73,
+          "critical_5pct": -2.902030597326081,
+          "icbest": null,
+          "warnings": []
+        },
+        "7": {
+          "stat": -1.7451312156619072,
+          "p": 0.4080222212333239,
+          "lags": 7,
+          "nobs": 72,
+          "critical_5pct": -2.9026070739026064,
+          "icbest": null,
+          "warnings": []
+        },
+        "8": {
+          "stat": -1.6287721400619053,
+          "p": 0.468133489442918,
+          "lags": 8,
+          "nobs": 71,
+          "critical_5pct": -2.9032002348069774,
+          "icbest": null,
+          "warnings": []
+        }
+      },
+      "kpss_level_auto": {
+        "stat": 1.0319445599835413,
+        "p": 0.01,
+        "lags": 5,
+        "critical_5pct": 0.463,
+        "warnings": [
+          "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      },
+      "kpss_trend_auto": {
+        "stat": 0.20898066746588972,
+        "p": 0.012632249700291353,
+        "lags": 5,
+        "critical_5pct": 0.146,
+        "warnings": [
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      },
+      "adf_first_difference_intercept_aic_max8": {
+        "stat": -9.46163596896871,
+        "p": 4.338013433934595e-16,
+        "lags": 0,
+        "nobs": 78,
+        "critical_5pct": -2.8993754262546574,
+        "icbest": -595.7672765007285,
+        "warnings": []
+      },
+      "adf_first_difference_intercept_fixed1": {
+        "stat": -6.76975152949028,
+        "p": 2.6603995292721255e-09,
+        "lags": 1,
+        "nobs": 77,
+        "critical_5pct": -2.899878185191432,
+        "icbest": null,
+        "warnings": []
+      }
+    },
+    "ECB_Rate": {
+      "adf_intercept_aic_max8": {
+        "stat": -4.15352098557169,
+        "p": 0.0007889872060040918,
+        "lags": 0,
+        "nobs": 79,
+        "critical_5pct": -2.898885703483903,
+        "icbest": -781.5847664387964,
+        "warnings": []
+      },
+      "adf_intercept_trend_aic_max8": {
+        "stat": -3.376201400242131,
+        "p": 0.054649724457157545,
+        "lags": 0,
+        "nobs": 79,
+        "critical_5pct": -3.467604557671908,
+        "icbest": -779.9459082208912,
+        "warnings": []
+      },
+      "adf_intercept_fixed1": {
+        "stat": -3.8511949163514503,
+        "p": 0.002424875858474977,
+        "lags": 1,
+        "nobs": 78,
+        "critical_5pct": -2.8993754262546574,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed4": {
+        "stat": -3.2422723099675133,
+        "p": 0.017664529851559155,
+        "lags": 4,
+        "nobs": 75,
+        "critical_5pct": -2.9009249540740742,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed_lags_0_to_8": {
+        "0": {
+          "stat": -4.15352098557169,
+          "p": 0.0007889872060040918,
+          "lags": 0,
+          "nobs": 79,
+          "critical_5pct": -2.898885703483903,
+          "icbest": null,
+          "warnings": []
+        },
+        "1": {
+          "stat": -3.8511949163514503,
+          "p": 0.002424875858474977,
+          "lags": 1,
+          "nobs": 78,
+          "critical_5pct": -2.8993754262546574,
+          "icbest": null,
+          "warnings": []
+        },
+        "2": {
+          "stat": -2.959894644487488,
+          "p": 0.03881329118738539,
+          "lags": 2,
+          "nobs": 77,
+          "critical_5pct": -2.899878185191432,
+          "icbest": null,
+          "warnings": []
+        },
+        "3": {
+          "stat": -2.961659005568941,
+          "p": 0.038633433426957506,
+          "lags": 3,
+          "nobs": 76,
+          "critical_5pct": -2.9003945086747343,
+          "icbest": null,
+          "warnings": []
+        },
+        "4": {
+          "stat": -3.2422723099675133,
+          "p": 0.017664529851559155,
+          "lags": 4,
+          "nobs": 75,
+          "critical_5pct": -2.9009249540740742,
+          "icbest": null,
+          "warnings": []
+        },
+        "5": {
+          "stat": -2.6983676531338356,
+          "p": 0.07432116253591642,
+          "lags": 5,
+          "nobs": 74,
+          "critical_5pct": -2.9014701097664504,
+          "icbest": null,
+          "warnings": []
+        },
+        "6": {
+          "stat": -2.5176513218198373,
+          "p": 0.11123842345115759,
+          "lags": 6,
+          "nobs": 73,
+          "critical_5pct": -2.902030597326081,
+          "icbest": null,
+          "warnings": []
+        },
+        "7": {
+          "stat": -2.568523166601482,
+          "p": 0.09967894881709954,
+          "lags": 7,
+          "nobs": 72,
+          "critical_5pct": -2.9026070739026064,
+          "icbest": null,
+          "warnings": []
+        },
+        "8": {
+          "stat": -2.7483775488581963,
+          "p": 0.0660343822677075,
+          "lags": 8,
+          "nobs": 71,
+          "critical_5pct": -2.9032002348069774,
+          "icbest": null,
+          "warnings": []
+        }
+      },
+      "kpss_level_auto": {
+        "stat": 0.8549908783211426,
+        "p": 0.01,
+        "lags": 5,
+        "critical_5pct": 0.463,
+        "warnings": [
+          "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      },
+      "kpss_trend_auto": {
+        "stat": 0.26261029991934615,
+        "p": 0.01,
+        "lags": 5,
+        "critical_5pct": 0.146,
+        "warnings": [
+          "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      }
+    },
+    "Euribor_3M": {
+      "adf_intercept_aic_max8": {
+        "stat": -3.7519530925117803,
+        "p": 0.00343897824366919,
+        "lags": 0,
+        "nobs": 79,
+        "critical_5pct": -2.898885703483903,
+        "icbest": -764.4711889709423,
+        "warnings": []
+      },
+      "adf_intercept_trend_aic_max8": {
+        "stat": -3.2161734803060367,
+        "p": 0.08122684127648949,
+        "lags": 0,
+        "nobs": 79,
+        "critical_5pct": -3.467604557671908,
+        "icbest": -763.0652750722991,
+        "warnings": []
+      },
+      "adf_intercept_fixed1": {
+        "stat": -3.9810970772341405,
+        "p": 0.001512791952604872,
+        "lags": 1,
+        "nobs": 78,
+        "critical_5pct": -2.8993754262546574,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed4": {
+        "stat": -3.3920253755666314,
+        "p": 0.011233748716149822,
+        "lags": 4,
+        "nobs": 75,
+        "critical_5pct": -2.9009249540740742,
+        "icbest": null,
+        "warnings": []
+      },
+      "adf_intercept_fixed_lags_0_to_8": {
+        "0": {
+          "stat": -3.7519530925117803,
+          "p": 0.00343897824366919,
+          "lags": 0,
+          "nobs": 79,
+          "critical_5pct": -2.898885703483903,
+          "icbest": null,
+          "warnings": []
+        },
+        "1": {
+          "stat": -3.9810970772341405,
+          "p": 0.001512791952604872,
+          "lags": 1,
+          "nobs": 78,
+          "critical_5pct": -2.8993754262546574,
+          "icbest": null,
+          "warnings": []
+        },
+        "2": {
+          "stat": -2.9936541059372024,
+          "p": 0.03549129182533448,
+          "lags": 2,
+          "nobs": 77,
+          "critical_5pct": -2.899878185191432,
+          "icbest": null,
+          "warnings": []
+        },
+        "3": {
+          "stat": -2.984193295282832,
+          "p": 0.03639714785639643,
+          "lags": 3,
+          "nobs": 76,
+          "critical_5pct": -2.9003945086747343,
+          "icbest": null,
+          "warnings": []
+        },
+        "4": {
+          "stat": -3.3920253755666314,
+          "p": 0.011233748716149822,
+          "lags": 4,
+          "nobs": 75,
+          "critical_5pct": -2.9009249540740742,
+          "icbest": null,
+          "warnings": []
+        },
+        "5": {
+          "stat": -3.0259418049571374,
+          "p": 0.03254176176884216,
+          "lags": 5,
+          "nobs": 74,
+          "critical_5pct": -2.9014701097664504,
+          "icbest": null,
+          "warnings": []
+        },
+        "6": {
+          "stat": -2.46514169042145,
+          "p": 0.1241876931866292,
+          "lags": 6,
+          "nobs": 73,
+          "critical_5pct": -2.902030597326081,
+          "icbest": null,
+          "warnings": []
+        },
+        "7": {
+          "stat": -2.5171829833071877,
+          "p": 0.1113492989988093,
+          "lags": 7,
+          "nobs": 72,
+          "critical_5pct": -2.9026070739026064,
+          "icbest": null,
+          "warnings": []
+        },
+        "8": {
+          "stat": -2.7388281896870903,
+          "p": 0.06755690322255775,
+          "lags": 8,
+          "nobs": 71,
+          "critical_5pct": -2.9032002348069774,
+          "icbest": null,
+          "warnings": []
+        }
+      },
+      "kpss_level_auto": {
+        "stat": 0.850325779669327,
+        "p": 0.01,
+        "lags": 5,
+        "critical_5pct": 0.463,
+        "warnings": [
+          "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      },
+      "kpss_trend_auto": {
+        "stat": 0.271346592187002,
+        "p": 0.01,
+        "lags": 5,
+        "critical_5pct": 0.146,
+        "warnings": [
+          "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+          "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+        ]
+      },
+      "adf_forward_fill_sensitivity": {
+        "stat": -3.743946307014985,
+        "p": 0.003535798127826295,
+        "lags": 0,
+        "nobs": 79,
+        "critical_5pct": -2.898885703483903,
+        "icbest": -762.7268980762074,
+        "warnings": []
+      },
+      "adf_complete_case_fixed1_diagnostic_only": {
+        "stat": -3.9881268245004393,
+        "p": 0.0014739747828943063,
+        "lags": 1,
+        "nobs": 76,
+        "critical_5pct": -2.9003945086747343,
+        "icbest": null,
+        "warnings": []
+      }
+    }
+  },
+  "residual_diagnostics_complete_cases": {
+    "n": 78,
+    "jarque_bera": [
+      3484.9409616764306,
+      0.0
+    ],
+    "shapiro": [
+      0.5097514756262052,
+      1.0238587699988051e-14
+    ],
+    "breusch_pagan_studentized_lm": [
+      1.667819180311869,
+      0.7965546701003693,
+      0.39875318265295706,
+      0.8089239464981145
+    ],
+    "breusch_pagan_classical_lm": [
+      27.662996005952436,
+      1.4596265636864646e-05,
+      0.3987531826529643,
+      0.8089239464981101
+    ],
+    "white_lm": [
+      5.42786843529537,
+      0.9789223517983265,
+      0.336567321810738,
+      0.9862824406664648
+    ],
+    "arch_lm_lag4": [
+      0.09733028243813524,
+      0.9988535777381083,
+      0.022718358869501916,
+      0.9989712495839428
+    ],
+    "breusch_godfrey_lag1": [
+      3.7062577996439767,
+      0.054208799712675726,
+      3.5918309358373506,
+      0.06207893684856733
+    ],
+    "breusch_godfrey_lag4": [
+      5.385010150851939,
+      0.25002360002368157,
+      1.2792320882392227,
+      0.2866123203350401
+    ],
+    "ljung_box": {
+      "1": {
+        "stat": 3.8332183581892316,
+        "p": 0.05024636535509118
+      },
+      "4": {
+        "stat": 7.939210605335712,
+        "p": 0.09383054074432137
+      },
+      "8": {
+        "stat": 9.327253686774759,
+        "p": 0.31544574495750394
+      }
+    },
+    "reset_f": [
+      2.3632214816601476,
+      0.12860869208337358
+    ],
+    "cusum": [
+      1.1548401479108203,
+      0.13883081802372071
+    ]
+  },
+  "residual_diagnostics_interpolated_euribor": {
+    "n": 80,
+    "jarque_bera": [
+      3762.639314726574,
+      0.0
+    ],
+    "shapiro": [
+      0.5080821074712749,
+      6.221725005539411e-15
+    ],
+    "breusch_pagan_studentized_lm": [
+      1.7564435631408504,
+      0.7804408604952112,
+      0.4209077182664543,
+      0.7930732486922649
+    ],
+    "breusch_pagan_classical_lm": [
+      29.882767749090817,
+      5.170891809974055e-06,
+      0.420907718266455,
+      0.7930732486922643
+    ],
+    "white_lm": [
+      5.216894868836448,
+      0.9825592192965832,
+      0.32388729463466237,
+      0.9886689359679011
+    ],
+    "arch_lm_lag4": [
+      0.09142251777045018,
+      0.9989865394182434,
+      0.02137768542435564,
+      0.9990880520713501
+    ],
+    "breusch_godfrey_lag1": [
+      3.7911556864362517,
+      0.05152406208411433,
+      3.681272473336163,
+      0.05888404574003875
+    ],
+    "breusch_godfrey_lag4": [
+      5.508849838515193,
+      0.23895266610522253,
+      1.3126671345746261,
+      0.2736241084942757
+    ],
+    "ljung_box": {
+      "1": {
+        "stat": 3.9215890153741375,
+        "p": 0.04766980257001961
+      },
+      "4": {
+        "stat": 8.1519902573292,
+        "p": 0.08616660938385252
+      },
+      "8": {
+        "stat": 9.55405455611354,
+        "p": 0.2977296777985742
+      }
+    },
+    "reset_f": [
+      2.2642771960850534,
+      0.13664444335363551
+    ],
+    "cusum": [
+      1.1587053213789635,
+      0.13637235410567022
+    ]
+  },
+  "residual_diagnostics_without_2015q2": {
+    "n": 77,
+    "jarque_bera": [
+      123.42762658512767,
+      1.5777254453415233e-27
+    ],
+    "shapiro": [
+      0.7798957636553225,
+      2.2046108180895145e-09
+    ],
+    "breusch_pagan_studentized_lm": [
+      8.80367751888894,
+      0.06619837568459218,
+      2.3236765499179617,
+      0.06466350889182419
+    ],
+    "breusch_pagan_classical_lm": [
+      29.10155584249364,
+      7.454689527815597e-06,
+      2.3236765499179546,
+      0.06466350889182493
+    ],
+    "white_lm": [
+      18.528111160944782,
+      0.1837751901054445,
+      1.4032908007916038,
+      0.1788673931277266
+    ],
+    "arch_lm_lag4": [
+      21.797614638327484,
+      0.00021989307568980653,
+      7.237152063015976,
+      6.460324365877595e-05
+    ],
+    "breusch_godfrey_lag1": [
+      43.96770919584478,
+      3.3383815241978683e-11,
+      94.5047187739184,
+      1.1066232450440503e-14
+    ],
+    "breusch_godfrey_lag4": [
+      44.11134037106,
+      6.083057121478434e-09,
+      22.800953117838887,
+      5.625578395114731e-12
+    ],
+    "ljung_box": {
+      "1": {
+        "stat": 44.79206713689974,
+        "p": 2.1910859634864697e-11
+      },
+      "4": {
+        "stat": 98.5519654817819,
+        "p": 2.0001988522955283e-20
+      },
+      "8": {
+        "stat": 105.443465350375,
+        "p": 3.280937930244651e-19
+      }
+    },
+    "reset_f": [
+      7.560135973355068,
+      0.007563098728845034
+    ],
+    "cusum": [
+      1.530086348707593,
+      0.018514851562338373
+    ]
+  },
+  "residual_diagnostics_interpolated_euribor_and_2015q2_target": {
+    "n": 80,
+    "jarque_bera": [
+      140.48940466251585,
+      3.1125289145330363e-31
+    ],
+    "shapiro": [
+      0.7770287967432058,
+      1.1318024668625813e-09
+    ],
+    "breusch_pagan_studentized_lm": [
+      9.347899563748605,
+      0.05296816024244066,
+      2.4807913103508272,
+      0.05096191119643456
+    ],
+    "breusch_pagan_classical_lm": [
+      32.339231886657245,
+      1.6307432971596595e-06,
+      2.480791310350837,
+      0.05096191119643384
+    ],
+    "white_lm": [
+      19.360468917550186,
+      0.15162759949688687,
+      1.4823315714742842,
+      0.14316232687737032
+    ],
+    "arch_lm_lag4": [
+      23.085435884558695,
+      0.00012174550839059676,
+      7.743926342413931,
+      3.0853602395976496e-05
+    ],
+    "breusch_godfrey_lag1": [
+      45.68229378894532,
+      1.3907422718077546e-11,
+      98.50570197180038,
+      3.0421417323459953e-15
+    ],
+    "breusch_godfrey_lag4": [
+      45.80443773589184,
+      2.704773738899956e-09,
+      23.77585616322612,
+      1.6793268849390907e-12
+    ],
+    "ljung_box": {
+      "1": {
+        "stat": 46.74872121012945,
+        "p": 8.06975785446182e-12
+      },
+      "4": {
+        "stat": 102.35098080294627,
+        "p": 3.1062288546598762e-21
+      },
+      "8": {
+        "stat": 108.93936936659352,
+        "p": 6.288697029150821e-20
+      }
+    },
+    "reset_f": [
+      7.511405909715348,
+      0.0076810197542476095
+    ],
+    "cusum": [
+      1.5307334351675819,
+      0.018441655218129807
+    ]
+  }
+}

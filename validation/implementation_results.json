@@ -1,0 +1,25 @@
+{
+  "singular_design": {
+    "status": "LinAlgError",
+    "message": "Singular matrix"
+  },
+  "perfect_fit": {
+    "status": "returned",
+    "warnings": [],
+    "r2": 1.0
+  },
+  "constant_vif": {
+    "output": {
+      "a": NaN,
+      "b": NaN
+    },
+    "warnings": [
+      "invalid value encountered in divide",
+      "invalid value encountered in divide"
+    ]
+  },
+  "pd_above_one": {
+    "first_raw": "+110.0000%",
+    "first_final": "110.0000%"
+  }
+}

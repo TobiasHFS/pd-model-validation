@@ -1,0 +1,598 @@
+{
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "data_audit": {
+    "published_quantiles": {
+      "PD_Retail": {
+        "claimed": [
+          0.0223,
+          0.024862,
+          0.0285
+        ],
+        "computed": [
+          0.022599438098902774,
+          0.0248622457140385,
+          0.0279809275133022
+        ],
+        "absolute_discrepancy": [
+          0.00029943809890277395,
+          2.45714038501349e-07,
+          0.0005190724866978025
+        ]
+      },
+      "GDP_Index": {
+        "claimed": [
+          2635.78,
+          2707.29,
+          2761.54
+        ],
+        "computed": [
+          2637.1133079403003,
+          2696.3142143833466,
+          2754.1016855068965
+        ],
+        "absolute_discrepancy": [
+          1.3333079403000738,
+          10.975785616653411,
+          7.438314493103462
+        ]
+      },
+      "Unemployment_Rate": {
+        "claimed": [
+          0.0482,
+          0.0514,
+          0.057
+        ],
+        "computed": [
+          0.048482455210687225,
+          0.051507874505453854,
+          0.05972214258192542
+        ],
+        "absolute_discrepancy": [
+          0.0002824552106872255,
+          0.00010787450545385324,
+          0.0027221425819254214
+        ]
+      },
+      "ECB_Rate": {
+        "claimed": [
+          0.0001,
+          0.0029,
+          0.0053
+        ],
+        "computed": [
+          0.00012604066107507706,
+          0.00286415300364335,
+          0.0052587595199824
+        ],
+        "absolute_discrepancy": [
+          2.604066107507706e-05,
+          3.584699635664993e-05,
+          4.12404800176e-05
+        ]
+      },
+      "Euribor_3M": {
+        "claimed": [
+          0.0014,
+          0.0036,
+          0.0061
+        ],
+        "computed": [
+          0.001405791367570625,
+          0.0035767752596654,
+          0.006146839545538675
+        ],
+        "absolute_discrepancy": [
+          5.791367570624978e-06,
+          2.322474033459969e-05,
+          4.6839545538674907e-05
+        ]
+      }
+    },
+    "pd_mean": 0.028564801541109602,
+    "pd_median": 0.0248622457140385,
+    "pd_10pct_trimmed_mean": 0.025180304984452964,
+    "pd_mean_without_2015q2": 0.027027647130237573,
+    "number_of_zeros_ecb_2022_2024": 8
+  },
+  "influence": {
+    "n": 78,
+    "cooks_4_over_n": 0.05128205128205128,
+    "top_cooks": [
+      {
+        "date": "2015-06-30",
+        "cook": 0.4005145231040379,
+        "externally_studentized_residual": 12.386276512844512,
+        "leverage": 0.038744911320260714
+      },
+      {
+        "date": "2021-03-31",
+        "cook": 0.0676279208740418,
+        "externally_studentized_residual": 2.070339452722059,
+        "leverage": 0.07616104869291965
+      },
+      {
+        "date": "2020-12-31",
+        "cook": 0.06181524782464636,
+        "externally_studentized_residual": 1.8584218969176647,
+        "leverage": 0.08466696507815892
+      },
+      {
+        "date": "2020-03-31",
+        "cook": 0.05621735788853155,
+        "externally_studentized_residual": 2.2327134913289726,
+        "leverage": 0.056126936919252614
+      },
+      {
+        "date": "2021-06-30",
+        "cook": 0.02754700458496806,
+        "externally_studentized_residual": 1.6470715974183294,
+        "leverage": 0.049395967353441435
+      }
+    ],
+    "2015q2_external_studentized_residual": 12.386276512844512,
+    "2015q2_dfbetas": {
+      "intercept": -0.6421745501558815,
+      "GDP_Index": 0.5177551444705816,
+      "Unemployment_Rate": 1.4483746460358515,
+      "ECB_Rate": 0.7963382963764797,
+      "Euribor_3M": -1.0434292651094568
+    },
+    "max_abs_dfbetas": {
+      "intercept": 0.6421745501558815,
+      "GDP_Index": 0.5177551444705816,
+      "Unemployment_Rate": 1.4483746460358515,
+      "ECB_Rate": 0.7963382963764797,
+      "Euribor_3M": 1.0434292651094568
+    },
+    "leave_one_out_sign_flips": {
+      "intercept": 0,
+      "GDP_Index": 0,
+      "Unemployment_Rate": 24,
+      "ECB_Rate": 3,
+      "Euribor_3M": 1
+    },
+    "leave_one_out_coefficient_ranges": {
+      "intercept": [
+        0.07444199128525292,
+        0.1767561467781821
+      ],
+      "GDP_Index": [
+        -4.898835762560932e-05,
+        -1.832870865265063e-05
+      ],
+      "Unemployment_Rate": [
+        -0.3472780573756958,
+        0.16181597026659786
+      ],
+      "ECB_Rate": [
+        -1.5147228662658416,
+        1.5183318187497439
+      ],
+      "Euribor_3M": [
+        -2.4201467824604777,
+        1.2042046264616004
+      ]
+    },
+    "huber_coefficients": {
+      "intercept": 0.04034241736777957,
+      "GDP_Index": -7.092656707129716e-06,
+      "Unemployment_Rate": 0.10142449224813535,
+      "ECB_Rate": 0.598869495264049,
+      "Euribor_3M": -0.8444644199528897
+    },
+    "huber_event_weight": 0.040027540422889564,
+    "rolling_40_observation_windows": 39,
+    "rolling_positive_share": {
+      "intercept": 0.4358974358974359,
+      "GDP_Index": 0.5641025641025641,
+      "Unemployment_Rate": 1.0,
+      "ECB_Rate": 0.8717948717948718,
+      "Euribor_3M": 0.1282051282051282
+    },
+    "rolling_coefficient_ranges": {
+      "intercept": [
+        -0.6865919788858448,
+        0.4334805663436633
+      ],
+      "GDP_Index": [
+        -0.0001893175687563532,
+        0.00025021343553298576
+      ],
+      "Unemployment_Rate": [
+        0.23660809952662631,
+        2.4349111585186742
+      ],
+      "ECB_Rate": [
+        -0.6633468821629815,
+        5.363789637014236
+      ],
+      "Euribor_3M": [
+        -6.8645971877948675,
+        1.345647686660536
+      ]
+    }
+  },
+  "additional_statistical_tests": {
+    "anderson_darling_residual_normality": {
+      "stat": 10.124628857903147,
+      "p": 1.129746891374352e-24
+    },
+    "rainbow_linearity_time_order": {
+      "stat": 0.35150314516994946,
+      "p": 0.9990493509617988
+    },
+    "goldfeld_quandt_heteroskedasticity_time_order": {
+      "f": 8.211649656314309,
+      "p": 7.730552709497218e-07,
+      "alternative": "two-sided"
+    },
+    "goldfeld_quandt_without_2015q2_diagnostic_only": {
+      "f": 7.896833289513982,
+      "p": 1.716704717277368e-06
+    },
+    "levene_median_residual_2005_14_vs_2015_24": {
+      "stat": 4.010262841041339,
+      "p": 0.0487911569537279
+    },
+    "quarter_anova_target": {
+      "stat": 0.7945077391647886,
+      "p": 0.500704797345257
+    },
+    "quarter_kruskal_target": {
+      "stat": 0.36666666666667425,
+      "p": 0.9470389413271634
+    },
+    "quarter_kruskal_target_without_2015q2": {
+      "stat": 0.3538840772818048,
+      "p": 0.9495951972352696
+    },
+    "chow_breaks": {
+      "2009-01-01": {
+        "n_before": 16,
+        "n_after": 62,
+        "f": 0.3101837074205176,
+        "df1": 5,
+        "df2": 68,
+        "p": 0.9052137739948394
+      },
+      "2015-06-30": {
+        "n_before": 40,
+        "n_after": 38,
+        "f": 4.353611250904747,
+        "df1": 5,
+        "df2": 68,
+        "p": 0.0016981853049700788
+      },
+      "2020-01-01": {
+        "n_before": 58,
+        "n_after": 20,
+        "f": 3.3214387336700226,
+        "df1": 5,
+        "df2": 68,
+        "p": 0.009628878918052261
+      }
+    },
+    "chow_holm_adjusted_p_three_boundaries": {
+      "2009-01-01": 0.9052137739948394,
+      "2015-06-30": 0.005094555914910237,
+      "2020-01-01": 0.019257757836104523
+    },
+    "chow_breaks_without_2015q2_diagnostic_only": {
+      "2009-01-01": {
+        "n_before": 16,
+        "n_after": 61,
+        "f": 1.3489953930295018,
+        "df1": 5,
+        "df2": 67,
+        "p": 0.2547873528799245
+      },
+      "2020-01-01": {
+        "n_before": 57,
+        "n_after": 20,
+        "f": 19.398874660434153,
+        "df1": 5,
+        "df2": 67,
+        "p": 6.844688528226252e-12
+      }
+    },
+    "zivot_andrews_trend_break": {
+      "PD_Retail": {
+        "stat": -8.105397156864424,
+        "p": 0.0009477875849634665,
+        "selected_lag": 0,
+        "break_index": 59,
+        "break_date": "2019-12-31"
+      },
+      "GDP_Index": {
+        "stat": -6.3186982443636355,
+        "p": 0.0013136422787662293,
+        "selected_lag": 1,
+        "break_index": 59,
+        "break_date": "2019-12-31"
+      },
+      "Unemployment_Rate": {
+        "stat": -5.74846796512726,
+        "p": 0.005492115305566969,
+        "selected_lag": 0,
+        "break_index": 23,
+        "break_date": "2010-12-31"
+      },
+      "ECB_Rate": {
+        "stat": -3.9008839642456086,
+        "p": 0.5710016440026942,
+        "selected_lag": 0,
+        "break_index": 49,
+        "break_date": "2017-06-30"
+      },
+      "Euribor_3M": {
+        "stat": -3.9738508024234562,
+        "p": 0.5212480815830667,
+        "selected_lag": 0,
+        "break_index": 47,
+        "break_date": "2016-12-31"
+      }
+    },
+    "test_warnings": [
+      "het_goldfeldquandt currently returns a plain tuple whose length depends on the store argument. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a GoldfeldQuandtResult NamedTuple. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning.",
+      "het_goldfeldquandt currently returns a plain tuple whose length depends on the store argument. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a GoldfeldQuandtResult NamedTuple. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+    ]
+  },
+  "forecast_challenge": {
+    "window": [
+      "2020-03-31",
+      "2024-12-31"
+    ],
+    "train_n": 58,
+    "test_n": 20,
+    "metrics": {
+      "full_contemporaneous": {
+        "n": 20,
+        "rmse": 0.01963136873204286,
+        "mae": 0.014471421830245695,
+        "bias": -0.006652577376652362,
+        "negative_predictions": 0
+      },
+      "full_contemporaneous_floored": {
+        "n": 20,
+        "rmse": 0.01963136873204286,
+        "mae": 0.014471421830245695,
+        "bias": -0.006652577376652362,
+        "negative_predictions": 0
+      },
+      "training_mean": {
+        "n": 20,
+        "rmse": 0.01771582714810266,
+        "mae": 0.012494967376991436,
+        "bias": -0.00686070530125883,
+        "negative_predictions": 0
+      },
+      "omit_euribor": {
+        "n": 20,
+        "rmse": 0.0191350877061509,
+        "mae": 0.014441970136337912,
+        "bias": -0.005829159595673032,
+        "negative_predictions": 0
+      },
+      "omit_ecb": {
+        "n": 20,
+        "rmse": 0.01924997826990486,
+        "mae": 0.014440237957577784,
+        "bias": -0.0060005969936643795,
+        "negative_predictions": 0
+      },
+      "lagged_macro": {
+        "n": 20,
+        "rmse": 0.018444269426454846,
+        "mae": 0.013761392955972252,
+        "bias": -0.0057132763521557705,
+        "negative_predictions": 0
+      },
+      "ar1_target": {
+        "n": 20,
+        "rmse": 0.017159586499004398,
+        "mae": 0.011937817564001663,
+        "bias": -0.006669411801306498,
+        "negative_predictions": 0
+      },
+      "logit_rate_challenger": {
+        "n": 20,
+        "rmse": 0.0195623323034931,
+        "mae": 0.01355207949144081,
+        "bias": -0.008506048891537665,
+        "negative_predictions": 0
+      },
+      "huber_challenger": {
+        "n": 20,
+        "rmse": 0.019497927158360046,
+        "mae": 0.01312451425719601,
+        "bias": -0.009408089872849943,
+        "negative_predictions": 0
+      }
+    },
+    "full_vs_mean_squared_loss_hac": {
+      "mean_loss_difference": 7.154010675197881e-05,
+      "hac_se": 3.2721088415272256e-05,
+      "hac_t": 2.1863608521832703,
+      "hac_p_two_sided": 0.028789215341324965,
+      "hac_95pct_ci": [
+        7.407951923094365e-06,
+        0.00013567226158086318
+      ],
+      "lag": 3,
+      "a_better_count": 4,
+      "b_better_count": 16
+    },
+    "full_vs_mean_absolute_loss_hac": {
+      "mean_loss_difference": 0.0019764544532542587,
+      "hac_se": 0.0005700590599117212,
+      "hac_t": 3.4671047129052384,
+      "hac_p_two_sided": 0.00052609690013537,
+      "hac_95pct_ci": [
+        0.0008591592267665237,
+        0.0030937496797419925
+      ],
+      "lag": 3,
+      "a_better_count": 4,
+      "b_better_count": 16
+    },
+    "full_oos_r2_vs_mean": -0.22794323909733571,
+    "full_vs_lagged_macro_squared_loss_hac": {
+      "mean_loss_difference": 4.5199563617773e-05,
+      "hac_se": 2.7973904658690568e-05,
+      "hac_t": 1.615775994422394,
+      "hac_p_two_sided": 0.10614275351879192,
+      "hac_95pct_ci": [
+        -9.628282020217756e-06,
+        0.00010002740925576373
+      ],
+      "lag": 3,
+      "a_better_count": 6,
+      "b_better_count": 14
+    },
+    "full_classical_95pct_observation_interval_coverage": 0.85,
+    "full_classical_95pct_observation_interval_below_count": 0,
+    "full_classical_95pct_observation_interval_above_count": 3,
+    "ar1_train_coefficient": {
+      "const": 0.02559988569021238,
+      "lag_pd": 0.04429657860510792
+    },
+    "fixed_five_year_windows": {
+      "2015-01-01": {
+        "n_train": 39,
+        "n_test": 19,
+        "ols": {
+          "n": 19,
+          "rmse": 0.03167674174244208,
+          "mae": 0.01716812872071519,
+          "bias": -0.01716812872071519,
+          "negative_predictions": 0
+        },
+        "mean": {
+          "n": 19,
+          "rmse": 0.02900797044325847,
+          "mae": 0.008821837935476721,
+          "bias": -0.008140124621809908,
+          "negative_predictions": 0
+        }
+      },
+      "2020-01-01": {
+        "n_train": 58,
+        "n_test": 20,
+        "ols": {
+          "n": 20,
+          "rmse": 0.01963136873204286,
+          "mae": 0.014471421830245695,
+          "bias": -0.006652577376652362,
+          "negative_predictions": 0
+        },
+        "mean": {
+          "n": 20,
+          "rmse": 0.01771582714810266,
+          "mae": 0.012494967376991436,
+          "bias": -0.00686070530125883,
+          "negative_predictions": 0
+        }
+      }
+    }
+  },
+  "feature_drift_train_2005_2019_vs_test_2020_2024": {
+    "GDP_Index": {
+      "train_mean": 2676.9231115898,
+      "test_mean": 2736.6215193083003,
+      "standardized_mean_shift": 0.7758253730641217,
+      "train_min": 2513.7089269126404,
+      "train_max": 2855.193966563802,
+      "test_outside_train_range_count": 0,
+      "ks_stat": 0.4172413793103449,
+      "ks_p_exploratory": 0.007630414067645334
+    },
+    "Unemployment_Rate": {
+      "train_mean": 0.05624616463033706,
+      "test_mean": 0.04923678547665371,
+      "standardized_mean_shift": -0.8195853017416446,
+      "train_min": 0.0452922676099276,
+      "train_max": 0.08,
+      "test_outside_train_range_count": 0,
+      "ks_stat": 0.606896551724138,
+      "ks_p_exploratory": 1.2329884032917916e-05
+    },
+    "ECB_Rate": {
+      "train_mean": 0.004966478626682392,
+      "test_mean": 0.0010129284393435704,
+      "standardized_mean_shift": -0.7769990299085425,
+      "train_min": 0.0,
+      "train_max": 0.02,
+      "test_outside_train_range_count": 0,
+      "ks_stat": 0.5879310344827586,
+      "ks_p_exploratory": 2.697575425406379e-05
+    },
+    "Euribor_3M": {
+      "train_mean": 0.005935157434854544,
+      "test_mean": 0.0021818432719053252,
+      "standardized_mean_shift": -0.7361960222704944,
+      "train_min": 2.395610023874905e-05,
+      "train_max": 0.0206691067676158,
+      "test_outside_train_range_count": 0,
+      "ks_stat": 0.5362068965517242,
+      "ks_p_exploratory": 0.0001897794334317509
+    }
+  },
+  "scenario_domain_vs_2005_2019_train": {
+    "baseline": {
+      "outside_train_marginal_ranges": [],
+      "mahalanobis_d2_train_covariance": 5.45371584385718,
+      "above_max_observed_train_d2": false
+    },
+    "mild": {
+      "outside_train_marginal_ranges": [],
+      "mahalanobis_d2_train_covariance": 2.942761016704052,
+      "above_max_observed_train_d2": false
+    },
+    "severe": {
+      "outside_train_marginal_ranges": [
+        "GDP_Index",
+        "Unemployment_Rate",
+        "Euribor_3M"
+      ],
+      "mahalanobis_d2_train_covariance": 67.48541755543894,
+      "above_max_observed_train_d2": true
+    },
+    "adverse": {
+      "outside_train_marginal_ranges": [],
+      "mahalanobis_d2_train_covariance": 33.403699878558726,
+      "above_max_observed_train_d2": true
+    },
+    "expansion": {
+      "outside_train_marginal_ranges": [
+        "GDP_Index",
+        "Unemployment_Rate",
+        "ECB_Rate",
+        "Euribor_3M"
+      ],
+      "mahalanobis_d2_train_covariance": 146.02977946827235,
+      "above_max_observed_train_d2": true
+    },
+    "boom": {
+      "outside_train_marginal_ranges": [
+        "GDP_Index",
+        "Unemployment_Rate",
+        "ECB_Rate",
+        "Euribor_3M"
+      ],
+      "mahalanobis_d2_train_covariance": 392.8152694487952,
+      "above_max_observed_train_d2": true
+    }
+  },
+  "interpretation_limits": [
+    "All p-values are exploratory; many correlated tests were examined without pre-registration.",
+    "Complete-case deletion creates two gaps in an otherwise quarterly sample.",
+    "The target is an unverified aggregate rate without default counts or exposure denominators.",
+    "Contemporaneous forecasts condition on observed same-quarter macro values.",
+    "The 2015 Q2 event is not removed or replaced in primary results."
+  ]
+}
