@@ -19,3 +19,7 @@ Results are written to JSON files in `validation/`.
 The submitted model, data and methodology are in `pd_model_submission/`. `generate_pd_data.py` recreates the synthetic CSV; rerun the checks if you replace it.
 
 [MIT license](LICENSE).
+
+## AI assistance
+
+This project was developed with heavy AI assistance. Codex and Google Antigravity are the main coding tools I use across these projects.
